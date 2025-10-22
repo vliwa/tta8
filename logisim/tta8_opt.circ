@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="4.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -17,6 +17,7 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Clock">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
     </tool>
     <tool name="POR">
@@ -77,7 +78,7 @@
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </tool>
     <sep/>
     <tool lib="1" name="NOT Gate">
@@ -296,6 +297,10 @@
       <a name="facing" val="east"/>
       <a name="label" val="CnY"/>
     </comp>
+    <comp lib="0" loc="(1240,880)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="LDI"/>
+    </comp>
     <comp lib="0" loc="(1250,350)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="bit1" val="0"/>
@@ -415,7 +420,7 @@
       <a name="facing" val="east"/>
       <a name="label" val="Cn"/>
     </comp>
-    <comp lib="0" loc="(1330,830)" name="Tunnel">
+    <comp lib="0" loc="(1340,880)" name="Tunnel">
       <a name="label" val="CARRY"/>
     </comp>
     <comp lib="0" loc="(1360,1230)" name="Splitter">
@@ -665,6 +670,7 @@
       <a name="label" val="C"/>
     </comp>
     <comp lib="0" loc="(1520,310)" name="Clock">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(1520,820)" name="Splitter">
@@ -1838,9 +1844,6 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(1310,830)" name="NAND Gate">
-      <a name="size" val="30"/>
-    </comp>
     <comp lib="1" loc="(1370,680)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
@@ -2598,6 +2601,9 @@
     <comp lib="4" loc="(120,140)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
+    <comp lib="4" loc="(1270,830)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
     <comp lib="4" loc="(1430,410)" name="RAM">
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="classic"/>
@@ -3103,6 +3109,7 @@
     <wire from="(1230,360)" to="(1230,370)"/>
     <wire from="(1240,140)" to="(1260,140)"/>
     <wire from="(1240,840)" to="(1260,840)"/>
+    <wire from="(1240,880)" to="(1260,880)"/>
     <wire from="(1250,350)" to="(1260,350)"/>
     <wire from="(1260,1110)" to="(1260,1160)"/>
     <wire from="(1260,1860)" to="(1260,1910)"/>
@@ -3110,9 +3117,6 @@
     <wire from="(1260,220)" to="(1260,230)"/>
     <wire from="(1260,400)" to="(1260,410)"/>
     <wire from="(1260,430)" to="(1260,440)"/>
-    <wire from="(1260,820)" to="(1260,840)"/>
-    <wire from="(1260,820)" to="(1270,820)"/>
-    <wire from="(1260,840)" to="(1270,840)"/>
     <wire from="(1270,150)" to="(1270,160)"/>
     <wire from="(1270,360)" to="(1270,370)"/>
     <wire from="(1280,140)" to="(1320,140)"/>
@@ -3136,7 +3140,6 @@
     <wire from="(1300,1450)" to="(1360,1450)"/>
     <wire from="(1300,1680)" to="(1360,1680)"/>
     <wire from="(1300,520)" to="(1320,520)"/>
-    <wire from="(1310,830)" to="(1330,830)"/>
     <wire from="(1320,1250)" to="(1320,1400)"/>
     <wire from="(1320,140)" to="(1320,350)"/>
     <wire from="(1320,1400)" to="(1440,1400)"/>
@@ -3145,6 +3148,7 @@
     <wire from="(1320,1710)" to="(1320,1860)"/>
     <wire from="(1320,1860)" to="(1440,1860)"/>
     <wire from="(1320,350)" to="(1320,520)"/>
+    <wire from="(1320,880)" to="(1340,880)"/>
     <wire from="(1330,1250)" to="(1330,1380)"/>
     <wire from="(1330,1380)" to="(1400,1380)"/>
     <wire from="(1330,1480)" to="(1330,1610)"/>
